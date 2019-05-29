@@ -11,7 +11,7 @@ export class ApiService {
 
   getBearerToken(refreshToken: string): Observable<any> {
     return this.http
-      .get<any>('https://localhost:4000/api/token')
+      .get<any>('/api/token')
       .pipe(
         catchError((error: Response) =>
           throwError(`Network error: ${error.statusText} (${error.status})`)

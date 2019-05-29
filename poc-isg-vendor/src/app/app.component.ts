@@ -8,7 +8,7 @@ import { ApiService } from './services/api.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'poc-isg-vendor';
+  title = 'ISG Solutions';
   bearerToken: string;
   constructor(private apiService: ApiService) {}
 
